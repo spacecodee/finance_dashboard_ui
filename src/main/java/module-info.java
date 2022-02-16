@@ -1,6 +1,7 @@
 module comspacecodee.finance_dashboard {
     requires javafx.controls;
     requires javafx.fxml;
+    requires lombok;
 
 
     opens com.spacecodee.finance_dashboard to javafx.fxml;

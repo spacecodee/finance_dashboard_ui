@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="btnParent" alignment="CENTER" cache="true" cacheHint="QUALITY" maxHeight="-Infinity"
+      maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.spacecodee.finance_dashboard.controller.components.buttons.ButtonIconLine">
+    <cursor>
+        <Cursor fx:constant="HAND"/>
+    </cursor>
+    <stylesheets>
+        <URL value="@../../../assets/css/fonts.css"/>
+        <URL value="@../../../assets/css/styles.css"/>
+    </stylesheets>
+    <styleClass>
+        <String fx:value="sidebar-body"/>
+        <String fx:value="hb_button"/>
+    </styleClass>
+    <Button fx:id="btnBody" alignment="BASELINE_LEFT" cache="true" cacheHint="QUALITY" graphicTextGap="15.0"
+            maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+            minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" text="Text" wrapText="true" HBox.hgrow="ALWAYS">
+        <styleClass>
+            <String fx:value="font-bold"/>
+            <String fx:value="button-sidebar-pressed"/>
+        </styleClass>
+        <graphic>
+            <ImageView cache="true" cacheHint="QUALITY" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <Image url="@../../../assets/icons/cards_blue.png"/>
+            </ImageView>
+        </graphic>
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Button>
+    <ImageView fx:id="imgLine" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
+               HBox.hgrow="ALWAYS">
+        <Image url="@../../../assets/icons/horizontal-line.png"/>
+    </ImageView>
+</HBox>

@@ -1,6 +1,10 @@
 * {
     -fx-lateral-color: #ffffff;
+    -fx-lateral-color-hover: #f9f9f9;
     -fx-dashboard-color: #e5eaf1;
+    -fx-font-color-dark: #000000;
+    -fx-font-color-dark-muted: #303336;
+    -fx-secondary-color: #035397;
     -fx-h1: 24px;
     -fx-h2: 20px;
     -fx-h3: 18px;
@@ -16,14 +20,44 @@
     -fx-padding: 10 30;
 }
 
+/*spaces*/
+.sidebar-body-space {
+    -fx-spacing: 80;
+}
+
+.sidebar-space {
+    -fx-spacing: 15;
+}
+
 /*buttons*/
 .button {
     -fx-background-color: -fx-lateral-color;
     -fx-border-width: 0;
+    -fx-text-fill: -fx-font-color-dark;
 }
 
-.button-sidebar {
+.hb_button {
+    -fx-padding: 5 15;
+    -fx-background-radius: 10;
+}
+
+.button-sidebar,
+.button-sidebar-pressed {
     -fx-font-size: 18;
 }
 
+.button-sidebar-pressed {
+    -fx-text-fill: -fx-secondary-color;
+}
+
+.button-sidebar:hover,
+.button-sidebar-pressed:hover,
+.hb_button:hover {
+    -fx-background-color: -fx-lateral-color-hover;
+}
+
 /*text*/
+.title_app {
+    -fx-text-fill: -fx-secondary-color;
+    -fx-font-size: 20;
+}
