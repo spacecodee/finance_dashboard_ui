@@ -11,20 +11,23 @@ import javafx.scene.shape.Rectangle;
 import java.io.File;
 
 public class Images {
-    private static final String URL_MAIN = "com/spacecodee/finance_dashboard/assets/";
+    private static final String URL_MAIN = "/com/spacecodee/finance_dashboard/assets/";
+    private static final String URL_ICONS = "target/classes/com/spacecodee/finance_dashboard/assets/icons/";
 
-    public static void addImg(String url, ImageView imageView) {
+    public static void addIcon(String icon, ImageView imageView) {
         try {
-            File fileImgBack = new File(Images.URL_MAIN + url);
+            File fileImgBack = new File(Images.URL_ICONS + icon);
             Image imgBack = new Image(fileImgBack.toURI().toString());
             imageView.setImage(imgBack);
+            imageView.setFitWidth(Dimensions.size24Width);
+            imageView.setFitHeight(Dimensions.size24Height);
         } catch (Exception ex) {
-            System.out.println("I'm Sorry, an ocurrent error, not image\n");
+            System.out.println("I'm Sorry, an current error, not image\n");
             ex.printStackTrace(System.out);
         }
     }
 
-    public static void addImg(String url, Label label) {
+    public static void addIcon(String url, Label label) {
         File fileImgBack = new File(Images.URL_MAIN + url);
         Image imgBack = new Image(fileImgBack.toURI().toString());
         ImageView view = new ImageView(imgBack);

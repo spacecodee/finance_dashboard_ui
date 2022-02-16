@@ -5,58 +5,53 @@
     -fx-font-color-dark: #000000;
     -fx-font-color-dark-muted: #303336;
     -fx-secondary-color: #035397;
-    -fx-h1: 24px;
-    -fx-h2: 20px;
-    -fx-h3: 18px;
-    -fx-h4: 16px;
 }
 
-.body {
+.body_color {
     -fx-background-color: -fx-dashboard-color;
 }
 
-.sidebar-body {
+.sidebar_body_color {
     -fx-background-color: -fx-lateral-color;
-    -fx-padding: 10 30;
+}
+
+.sidebar_body {
+    -fx-padding: 8 25;
 }
 
 /*spaces*/
-.sidebar-body-space {
-    -fx-spacing: 80;
+.sidebar_body_space {
+    -fx-spacing: 50;
 }
 
-.sidebar-space {
-    -fx-spacing: 15;
+.sidebar_space {
+    -fx-spacing: 10;
 }
 
 /*buttons*/
-.button {
+.button,
+.button_sidebar {
     -fx-background-color: -fx-lateral-color;
     -fx-border-width: 0;
     -fx-text-fill: -fx-font-color-dark;
-}
-
-.hb_button {
-    -fx-padding: 5 15;
+    -fx-padding: 5 20;
     -fx-background-radius: 10;
 }
 
-.button-sidebar,
-.button-sidebar-pressed {
-    -fx-font-size: 18;
+.button_sidebar_space {
+    -fx-spacing: 15;
 }
 
-.button-sidebar-pressed {
-    -fx-text-fill: -fx-secondary-color;
-}
-
-.button-sidebar:hover,
-.button-sidebar-pressed:hover,
-.hb_button:hover {
+/*Effect button*/
+.button_sidebar:hover {
     -fx-background-color: -fx-lateral-color-hover;
 }
 
 /*text*/
+.label {
+    -fx-font-size: 18;
+}
+
 .title_app {
     -fx-text-fill: -fx-secondary-color;
     -fx-font-size: 20;

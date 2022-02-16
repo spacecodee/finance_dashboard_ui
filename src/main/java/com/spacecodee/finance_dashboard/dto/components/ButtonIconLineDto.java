@@ -13,5 +13,9 @@ public class ButtonIconLineDto {
 
     @Getter
     @Setter
-    private String urlImage;
+    private String urlIcon;
+
+    @Getter
+    @Setter
+    private String urlIconLine;
 }
