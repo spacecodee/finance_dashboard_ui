@@ -1,0 +1,29 @@
+* {
+    -fx-lateral-color: #ffffff;
+    -fx-dashboard-color: #e5eaf1;
+    -fx-h1: 24px;
+    -fx-h2: 20px;
+    -fx-h3: 18px;
+    -fx-h4: 16px;
+}
+
+.body {
+    -fx-background-color: -fx-dashboard-color;
+}
+
+.sidebar-body {
+    -fx-background-color: -fx-lateral-color;
+    -fx-padding: 10 30;
+}
+
+/*buttons*/
+.button {
+    -fx-background-color: -fx-lateral-color;
+    -fx-border-width: 0;
+}
+
+.button-sidebar {
+    -fx-font-size: 18;
+}
+
+/*text*/
