@@ -95,7 +95,7 @@
                <top>
                   <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
                      <children>
-                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="container_card" HBox.hgrow="ALWAYS">
+                        <VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="container_card" HBox.hgrow="ALWAYS">
                            <children>
                               <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
                                  <children>
@@ -171,7 +171,7 @@
                                     <String fx:value="space_30" />
                                  </styleClass>
                               </VBox>
-                              <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" styleClass="space_10" VBox.vgrow="ALWAYS">
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" styleClass="space_10" VBox.vgrow="ALWAYS">
                                  <children>
                                     <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Total income in November: 3400USD" HBox.hgrow="ALWAYS">
                                        <styleClass>
