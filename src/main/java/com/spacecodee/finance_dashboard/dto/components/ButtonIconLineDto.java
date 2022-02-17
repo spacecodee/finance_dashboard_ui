@@ -17,5 +17,9 @@ public class ButtonIconLineDto {
 
     @Getter
     @Setter
-    private String urlIconLine;
+    private String urlIconPressed;
+
+    @Getter
+    @Setter
+    private boolean isPressed;
 }

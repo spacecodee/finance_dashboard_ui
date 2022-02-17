@@ -8,7 +8,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox fx:id="btnParent" alignment="CENTER_LEFT" cache="true" cacheHint="QUALITY" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacecodee.finance_dashboard.controller.components.buttons.ButtonIconLine">
+<HBox fx:id="btnParent" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacecodee.finance_dashboard.controller.components.buttons.ButtonIconLine">
     <cursor>
         <Cursor fx:constant="HAND" />
     </cursor>
@@ -21,11 +21,12 @@
          <Image url="@../../../assets/icons/cards_blue.png" />
       </image>
    </ImageView>
-   <Label fx:id="text" contentDisplay="CENTER" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" styleClass="font-bold" text="Label" HBox.hgrow="ALWAYS" />
-    <ImageView fx:id="iconLine" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-      <image>
-         <Image url="@../../../assets/icons/horizontal_line_dark.png" />
-      </image></ImageView>
+   <Label fx:id="text" contentDisplay="CENTER" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" text="Label" HBox.hgrow="ALWAYS">
+      <styleClass>
+         <String fx:value="font-bold" />
+         <String fx:value="text_button_sidebar" />
+      </styleClass></Label>
+    <ImageView fx:id="iconLine" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS" />
    <styleClass>
       <String fx:value="button_sidebar" />
       <String fx:value="button_sidebar_space" />

@@ -10,35 +10,46 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="body_color" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacecodee.finance_dashboard.controller.dashboard.DashboardController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+            minWidth="-Infinity" styleClass="body_color" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.spacecodee.finance_dashboard.controller.dashboard.DashboardController">
     <left>
-        <VBox alignment="TOP_CENTER" cache="true" cacheHint="QUALITY" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
             <styleClass>
-                <String fx:value="sidebar_body" />
-                <String fx:value="sidebar_body_color" />
-                <String fx:value="sidebar_body_space" />
+                <String fx:value="sidebar_body"/>
+                <String fx:value="sidebar_body_color"/>
+                <String fx:value="sidebar_body_space"/>
             </styleClass>
-            <VBox fx:id="topContainer" alignment="TOP_CENTER" cache="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="sidebar_space" VBox.vgrow="ALWAYS">
-                 <HBox alignment="CENTER_LEFT" cache="true" cacheHint="QUALITY" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                     <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                         <HBox.margin>
-                             <Insets />
-                         </HBox.margin>
-                         <Image url="@../../assets/icons/rocket.png" />
-                     </ImageView>
-                     <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="SPACECODEE" HBox.hgrow="ALWAYS">
-                         <styleClass>
-                             <String fx:value="font-bold" />
-                             <String fx:value="title_app" />
-                         </styleClass>
-                     </Label>
-                 </HBox>
+            <VBox fx:id="topContainer" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308"
+                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                  styleClass="sidebar_space" VBox.vgrow="ALWAYS">
+                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+                      minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true"
+                               HBox.hgrow="ALWAYS">
+                        <HBox.margin>
+                            <Insets/>
+                        </HBox.margin>
+                        <Image url="@../../assets/icons/rocket.png"/>
+                    </ImageView>
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                           minWidth="-Infinity" text="SPACECODEE" HBox.hgrow="ALWAYS">
+                        <styleClass>
+                            <String fx:value="font-bold"/>
+                            <String fx:value="title_app"/>
+                        </styleClass>
+                    </Label>
+                </HBox>
             </VBox>
-            <VBox fx:id="bottomContainer" alignment="BOTTOM_CENTER" cache="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="sidebar_space" VBox.vgrow="ALWAYS" />
+            <VBox fx:id="bottomContainer" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308"
+                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                  styleClass="sidebar_space" VBox.vgrow="ALWAYS"/>
         </VBox>
     </left>
     <stylesheets>
-        <URL value="@../../assets/css/styles.css" />
-        <URL value="@../../assets/css/fonts.css" />
+        <URL value="@../../assets/css/styles.css"/>
+        <URL value="@../../assets/css/fonts.css"/>
     </stylesheets>
 </BorderPane>
