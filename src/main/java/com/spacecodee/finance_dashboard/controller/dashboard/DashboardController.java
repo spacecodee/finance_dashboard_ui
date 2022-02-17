@@ -4,12 +4,14 @@ import com.spacecodee.finance_dashboard.controller.components.buttons.ButtonIcon
 import com.spacecodee.finance_dashboard.dto.components.ButtonIconLineDto;
 import com.spacecodee.finance_dashboard.utils.AppMode;
 import com.spacecodee.finance_dashboard.utils.AppUtils;
+import com.spacecodee.finance_dashboard.utils.Dimensions;
 import com.spacecodee.finance_dashboard.utils.Images;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 
 import java.io.IOException;
 import java.net.URL;
@@ -75,7 +77,6 @@ public class DashboardController implements Initializable {
 
         } else {
             Images.addIcon(listButtons[i].getUrlIcon(), buttonIconLine.getIcon());
-            //Images.addIcon("horizontal_line_dark.png", buttonIconLine.getIconLine());
         }
 
         return hBox;

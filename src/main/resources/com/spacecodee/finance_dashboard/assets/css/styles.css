@@ -5,10 +5,19 @@
     -fx-font-color-dark: #000000;
     -fx-font-color-dark-muted: #303336;
     -fx-secondary-color: #035397;
+    -fx-secondary-color_2: #033e70;
+    -fx-thrid-color: #e2e5ee;
+    -fx-four-color: #f0f1f3;
+    -fx-text-field-color: #f8f8f9;
 }
 
 .body_color {
     -fx-background-color: -fx-dashboard-color;
+}
+
+.body_color_center {
+    -fx-background-color: linear-gradient(to bottom left, -fx-thrid-color, -fx-four-color);
+    -fx-padding: 20;
 }
 
 .sidebar_body_color {
@@ -20,12 +29,24 @@
 }
 
 /*spaces*/
-.sidebar_body_space {
+.space_50 {
     -fx-spacing: 50;
 }
 
-.sidebar_space {
+.space_10 {
     -fx-spacing: 10;
+}
+
+.space15 {
+    -fx-spacing: 15;
+}
+
+.space_20 {
+    -fx-spacing: 20;
+}
+
+.space_30 {
+    -fx-spacing: 30;
 }
 
 /*buttons*/
@@ -37,8 +58,8 @@
     -fx-background-radius: 10;
 }
 
-.button_sidebar_space {
-    -fx-spacing: 15;
+.button_sidebar {
+    -fx-background-radius: 10 0 10 10;
 }
 
 /*Effect button*/
@@ -47,8 +68,13 @@
 }
 
 /*text*/
-.label {
+.label,
+.text-field {
     -fx-font-size: 18;
+}
+
+.text-field {
+    -fx-background-color: none;
 }
 
 .title_app {
@@ -62,4 +88,67 @@
 
 .text_button_sidebar_pressed {
     -fx-text-fill: -fx-secondary-color;
+}
+
+/*card*/
+.name_in_card,
+.cash_in_card,
+.data_bottom_in_card {
+    -fx-font-size: 20;
+    -fx-text-fill: -fx-lateral-color-hover;
+}
+
+.cash_in_card {
+    -fx-font-size: 40;
+}
+
+.data_bottom_in_card {
+    -fx-font-size: 16;
+}
+
+.text_container_card_bottom {
+    -fx-font-size: 12;
+}
+
+/*image view*/
+.notifications_img {
+    -fx-translate-y: 5;
+}
+
+.icon_in_card {
+    -fx-rotate: 90;
+}
+
+/*Containers*/
+.text_field_container {
+    -fx-padding: 2;
+    -fx-background-color: -fx-text-field-color;
+    -fx-background-radius: 10;
+}
+
+.container_card {
+    -fx-padding: 10;
+    -fx-spacing: 20;
+}
+
+.card {
+    -fx-padding: 10 20;
+    -fx-background-color: linear-gradient(to top left, -fx-secondary-color_2, -fx-secondary-color_2, -fx-secondary-color);
+    -fx-background-radius: 10;
+}
+
+.card_text_bottom_2 {
+    -fx-padding: 0 60 0 0;
+}
+
+/*Chart*/
+.chart {
+    -fx-padding: 10;
+    -fx-background-color: none;
+}
+
+.chart-plot-background,
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-background-color: none;
 }

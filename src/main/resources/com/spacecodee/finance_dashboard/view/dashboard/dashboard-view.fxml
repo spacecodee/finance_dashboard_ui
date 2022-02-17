@@ -3,53 +3,290 @@
 <?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
-            minWidth="-Infinity" styleClass="body_color" xmlns="http://javafx.com/javafx/17"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.spacecodee.finance_dashboard.controller.dashboard.DashboardController">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="body_color" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacecodee.finance_dashboard.controller.dashboard.DashboardController">
     <left>
-        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-              minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
             <styleClass>
-                <String fx:value="sidebar_body"/>
-                <String fx:value="sidebar_body_color"/>
-                <String fx:value="sidebar_body_space"/>
+                <String fx:value="sidebar_body" />
+                <String fx:value="sidebar_body_color" />
+                <String fx:value="space_50" />
             </styleClass>
-            <VBox fx:id="topContainer" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308"
-                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
-                  styleClass="sidebar_space" VBox.vgrow="ALWAYS">
-                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
-                      minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true"
-                               HBox.hgrow="ALWAYS">
+            <VBox fx:id="topContainer" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space_10" VBox.vgrow="ALWAYS">
+                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                         <HBox.margin>
-                            <Insets/>
+                            <Insets />
                         </HBox.margin>
-                        <Image url="@../../assets/icons/rocket.png"/>
+                        <Image url="@../../assets/icons/rocket.png" />
                     </ImageView>
-                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
-                           minWidth="-Infinity" text="SPACECODEE" HBox.hgrow="ALWAYS">
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="SPACECODEE" HBox.hgrow="ALWAYS">
                         <styleClass>
-                            <String fx:value="font-bold"/>
-                            <String fx:value="title_app"/>
+                            <String fx:value="font-bold" />
+                            <String fx:value="title_app" />
                         </styleClass>
                     </Label>
                 </HBox>
             </VBox>
-            <VBox fx:id="bottomContainer" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308"
-                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
-                  styleClass="sidebar_space" VBox.vgrow="ALWAYS"/>
+            <VBox fx:id="bottomContainer" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space_10" VBox.vgrow="ALWAYS" />
         </VBox>
     </left>
     <stylesheets>
-        <URL value="@../../assets/css/styles.css"/>
-        <URL value="@../../assets/css/fonts.css"/>
+        <URL value="@../../assets/css/styles.css" />
+        <URL value="@../../assets/css/fonts.css" />
     </stylesheets>
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space_20" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox maxHeight="-Infinity" maxWidth="300.0" minHeight="-Infinity" minWidth="-Infinity" styleClass="text_field_container" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" HBox.hgrow="ALWAYS" />
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="notifications_img" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../assets/icons/search_top.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space_20" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="notifications_img" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../assets/icons/notification_top.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true" styleClass="notifications_img" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../assets/icons/globe_top.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="210.0" pickOnBounds="true" preserveRatio="true" styleClass="notifications_img" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../assets/icons/user.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+               <top>
+                  <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="container_card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Guirisa Mirizade" HBox.hgrow="ALWAYS">
+                                             <styleClass>
+                                                <String fx:value="font-normal" />
+                                                <String fx:value="name_in_card" />
+                                             </styleClass>
+                                          </Label>
+                                          <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="icon_in_card" HBox.hgrow="ALWAYS">
+                                             <image>
+                                                <Image url="@../../assets/icons/signal_card.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="\$2500,71" HBox.hgrow="ALWAYS">
+                                             <styleClass>
+                                                <String fx:value="font-normal" />
+                                                <String fx:value="cash_in_card" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space_30" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <VBox alignment="BOTTOM_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Card number" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <styleClass>
+                                                      <String fx:value="font-normal" />
+                                                      <String fx:value="data_bottom_in_card" />
+                                                   </styleClass>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="---- ---- 4351 9654" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <styleClass>
+                                                      <String fx:value="font-normal" />
+                                                      <String fx:value="data_bottom_in_card" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="card_text_bottom_2" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Date" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <styleClass>
+                                                      <String fx:value="font-normal" />
+                                                      <String fx:value="data_bottom_in_card" />
+                                                   </styleClass>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="10/23" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <styleClass>
+                                                      <String fx:value="font-normal" />
+                                                      <String fx:value="data_bottom_in_card" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                             <image>
+                                                <Image url="@../../assets/icons/visa_card.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="card" />
+                                    <String fx:value="space_30" />
+                                 </styleClass>
+                              </VBox>
+                              <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" styleClass="space_10" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Total income in November: 3400USD" HBox.hgrow="ALWAYS">
+                                       <styleClass>
+                                          <String fx:value="font-bold" />
+                                          <String fx:value="text_container_card_bottom" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Total outcome in November: 1505USD" HBox.hgrow="ALWAYS">
+                                       <styleClass>
+                                          <String fx:value="font-bold" />
+                                          <String fx:value="text_container_card_bottom" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" HBox.hgrow="ALWAYS">
+                                       <image>
+                                          <Image url="@../../assets/icons/horizontal_line_dark.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="24.0" HBox.hgrow="ALWAYS">
+                                       <image>
+                                          <Image url="@../../assets/icons/circle_dot.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="210.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="24.0" HBox.hgrow="ALWAYS">
+                                       <image>
+                                          <Image url="@../../assets/icons/circle_dot.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label contentDisplay="RIGHT" graphicTextGap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" text="Incomes" HBox.hgrow="ALWAYS">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../assets/icons/arrow_down_chart.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space_10" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label contentDisplay="RIGHT" graphicTextGap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-normal" text="Montly" HBox.hgrow="ALWAYS">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../assets/icons/arrow_down_chart.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <Label contentDisplay="RIGHT" graphicTextGap="2.0" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-normal" text="October" HBox.hgrow="ALWAYS">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../assets/icons/arrow_down_chart.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <Label contentDisplay="RIGHT" graphicTextGap="2.0" layoutX="107.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-normal" text="2021" HBox.hgrow="ALWAYS">
+                                             <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../assets/icons/arrow_down_chart.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <AreaChart alternativeRowFillVisible="false" legendVisible="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" VBox.vgrow="ALWAYS">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </AreaChart>
+                           </children></VBox>
+                     </children>
+                  </HBox>
+               </top></BorderPane>
+         </children>
+         <styleClass>
+            <String fx:value="body_color_center" />
+            <String fx:value="space_20" />
+         </styleClass>
+      </VBox>
+   </center>
 </BorderPane>

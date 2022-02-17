@@ -29,6 +29,6 @@
     <ImageView fx:id="iconLine" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS" />
    <styleClass>
       <String fx:value="button_sidebar" />
-      <String fx:value="button_sidebar_space" />
+      <String fx:value="space15" />
    </styleClass>
 </HBox>
